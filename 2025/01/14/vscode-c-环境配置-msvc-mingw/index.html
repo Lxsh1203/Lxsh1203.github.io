@@ -4,15 +4,45 @@
   <meta charset="utf-8">
   
   
-  <title>Hexo</title>
+  <title>vscode c++环境配置(msvc+mingw) | Hexo</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-  <meta property="og:type" content="website">
-<meta property="og:title" content="Hexo">
-<meta property="og:url" content="http://example.com/index.html">
+  <meta name="description" content="提示：c&#x2F;c++均可使用本教程！1、安装及初步配置1.1 安装 首先，我们要打开官网，然后点击对应系统的下载项，有需求也可以下载预览版。  （Windows请点击最左侧的蓝色按钮，Linux为中间按钮，Mac为右侧，预览版在左下角）    打开后，同意协议。点击下一步，建议都勾选。（后面几个涉及到环境变量、右键菜单快捷打开、与打开cpp文件有关）安装即可。安装之后打开vscode，（我这">
+<meta property="og:type" content="article">
+<meta property="og:title" content="vscode c++环境配置(msvc+mingw)">
+<meta property="og:url" content="http://example.com/2025/01/14/vscode-c-%E7%8E%AF%E5%A2%83%E9%85%8D%E7%BD%AE-msvc-mingw/index.html">
 <meta property="og:site_name" content="Hexo">
+<meta property="og:description" content="提示：c&#x2F;c++均可使用本教程！1、安装及初步配置1.1 安装 首先，我们要打开官网，然后点击对应系统的下载项，有需求也可以下载预览版。  （Windows请点击最左侧的蓝色按钮，Linux为中间按钮，Mac为右侧，预览版在左下角）    打开后，同意协议。点击下一步，建议都勾选。（后面几个涉及到环境变量、右键菜单快捷打开、与打开cpp文件有关）安装即可。安装之后打开vscode，（我这">
 <meta property="og:locale" content="en_US">
+<meta property="og:image" content="https://i-blog.csdnimg.cn/direct/0bef4febf48a40418393780096af3fd2.png">
+<meta property="og:image" content="https://i-blog.csdnimg.cn/direct/f619154f40834e5b9c6c93f216c2b05c.png">
+<meta property="og:image" content="https://i-blog.csdnimg.cn/direct/d1eac5602a364600b070722c8b7e4c73.png">
+<meta property="og:image" content="https://i-blog.csdnimg.cn/direct/4d63af1ce64941738c332bd919cf8f71.png">
+<meta property="og:image" content="https://i-blog.csdnimg.cn/direct/7b484211faa14746b3e19acd1010c0ed.png">
+<meta property="og:image" content="https://i-blog.csdnimg.cn/direct/a1ccc74b93bf48cf95c399e6e71bef0e.png">
+<meta property="og:image" content="https://i-blog.csdnimg.cn/direct/ea50eec98a964ccab481d5a26afb4a09.png">
+<meta property="og:image" content="https://i-blog.csdnimg.cn/direct/fa882f5063794ba6b3d30146f2d7144b.png">
+<meta property="og:image" content="https://i-blog.csdnimg.cn/direct/57cfffd63e4e4f20ad522cd209cf8723.png">
+<meta property="og:image" content="https://i-blog.csdnimg.cn/direct/152a0fdcf294456883ce2734a1fc7953.png">
+<meta property="og:image" content="https://i-blog.csdnimg.cn/direct/095e74e97652488c9e983cee7041d7f7.png">
+<meta property="og:image" content="https://i-blog.csdnimg.cn/direct/4865ff27108b41ba844de536241a8e81.png">
+<meta property="og:image" content="https://i-blog.csdnimg.cn/direct/9259ce2c04ca40219ce18d2075cfe8aa.png">
+<meta property="og:image" content="https://i-blog.csdnimg.cn/direct/699e90896b864ebc91862573c8554721.png">
+<meta property="og:image" content="https://i-blog.csdnimg.cn/direct/28eb8861eb84465697b168ecb95bd845.png">
+<meta property="og:image" content="https://i-blog.csdnimg.cn/direct/3c9e5ed262af4cbea445d8a9396b4197.png">
+<meta property="og:image" content="https://i-blog.csdnimg.cn/direct/79530fe1aad0483491df7997cb470e72.png">
+<meta property="og:image" content="https://i-blog.csdnimg.cn/direct/2d971a19e4e7486ea4d0eb4271e4e9ab.png">
+<meta property="og:image" content="https://i-blog.csdnimg.cn/direct/8428e144633b41ee80ac43d611b04807.png">
+<meta property="og:image" content="https://i-blog.csdnimg.cn/direct/93cc2f489d4744f186525d31150077e6.png">
+<meta property="og:image" content="https://i-blog.csdnimg.cn/direct/89dfd7ec83234e80b7fe1be2d1dbcd4f.png">
+<meta property="og:image" content="https://i-blog.csdnimg.cn/direct/8f5203a70c9b4732a437d86e826f51b4.png">
+<meta property="og:image" content="https://i-blog.csdnimg.cn/direct/0760f58dd9614c3aa37ee3b541e29796.png#pic_center">
+<meta property="og:image" content="https://i-blog.csdnimg.cn/direct/fa18b9fcac6e46638ac0aa970fd06c78.png#pic_center">
+<meta property="og:image" content="https://i-blog.csdnimg.cn/direct/0411a04f4e7241688ca8fc5569c7e748.png#pic_center">
+<meta property="article:published_time" content="2025-01-14T08:57:46.000Z">
+<meta property="article:modified_time" content="2025-01-14T08:58:39.181Z">
 <meta property="article:author" content="John Doe">
 <meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="https://i-blog.csdnimg.cn/direct/0bef4febf48a40418393780096af3fd2.png">
   
     <link rel="alternate" href="/atom.xml" title="Hexo" type="application/atom+xml">
   
@@ -67,9 +97,7 @@
 </header>
 
       <div class="outer">
-        <section id="main">
-  
-    <article id="post-vscode-c-环境配置-msvc-mingw" class="h-entry article article-type-post" itemprop="blogPost" itemscope itemtype="https://schema.org/BlogPosting">
+        <section id="main"><article id="post-vscode-c-环境配置-msvc-mingw" class="h-entry article article-type-post" itemprop="blogPost" itemscope itemtype="https://schema.org/BlogPosting">
   <div class="article-meta">
     <a href="/2025/01/14/vscode-c-%E7%8E%AF%E5%A2%83%E9%85%8D%E7%BD%AE-msvc-mingw/" class="article-date">
   <time class="dt-published" datetime="2025-01-14T08:57:46.000Z" itemprop="datePublished">2025-01-14</time>
@@ -82,8 +110,8 @@
       <header class="article-header">
         
   
-    <h1 itemprop="name">
-      <a class="p-name article-title" href="/2025/01/14/vscode-c-%E7%8E%AF%E5%A2%83%E9%85%8D%E7%BD%AE-msvc-mingw/">vscode c++环境配置(msvc+mingw)</a>
+    <h1 class="p-name article-title" itemprop="headline name">
+      vscode c++环境配置(msvc+mingw)
     </h1>
   
 
@@ -127,80 +155,19 @@
     </footer>
   </div>
   
-</article>
-
-
-
+    
+<nav id="article-nav">
   
-    <article id="post-VPN" class="h-entry article article-type-post" itemprop="blogPost" itemscope itemtype="https://schema.org/BlogPosting">
-  <div class="article-meta">
-    <a href="/2025/01/13/VPN/" class="article-date">
-  <time class="dt-published" datetime="2025-01-13T03:56:30.000Z" itemprop="datePublished">2025-01-13</time>
-</a>
-    
-  </div>
-  <div class="article-inner">
-    
-    
-      <header class="article-header">
-        
   
-    <h1 itemprop="name">
-      <a class="p-name article-title" href="/2025/01/13/VPN/">VPN</a>
-    </h1>
+    <a href="/2025/01/13/VPN/" id="article-nav-older" class="article-nav-link-wrap">
+      <strong class="article-nav-caption">Older</strong>
+      <div class="article-nav-title">VPN</div>
+    </a>
   
+</nav>
 
-      </header>
-    
-    <div class="e-content article-entry" itemprop="articleBody">
-      
-        <h1 id="前言（本文主要参考https-waimao-pro-pack-）"><a href="#前言（本文主要参考https-waimao-pro-pack-）" class="headerlink" title="前言（本文主要参考https://waimao.pro/pack/）"></a>前言（本文主要参考<a target="_blank" rel="noopener" href="https://waimao.pro/pack/">https://waimao.pro/pack/</a>）</h1><p>近期，AI已经进入了编程界，各种大模型层出不穷，可令人遗憾的是，许多模型只能在国外使用，例如chatgpt等等。但一切困难都不能阻挡程序 <del>猿</del> 员！</p>
-<h1 id="本博客就来教大家如何使用ai！"><a href="#本博客就来教大家如何使用ai！" class="headerlink" title="本博客就来教大家如何使用ai！"></a><strong>本博客就来教大家如何使用ai！</strong></h1><h1 id="购买"><a href="#购买" class="headerlink" title="购买"></a>购买</h1><p><a target="_blank" rel="noopener" href="https://justmysocks3.net/members/aff.php?aff=17236">官方网址</a>：今天要用到的网站，打开应如图所示。</p>
-<img src="/2025/01/13/VPN/1.png" class="" title="官网">
-<p>这里点击右上角的English，然后更改成中文。</p>
-<img src="/2025/01/13/VPN/2.png" class="" title="中文官网">
-<p>点击注册。这里会有一个cloudflare的人机验证，等待即可，如果过不去，就从隐身模式里进入网站（缺点是每次都要登录）。<br>接下来进入如下界面。</p>
-<img src="/2025/01/13/VPN/3.png" class="" title="注册信息页面">
-<p>填写个人信息并成功注册。<br>注册之后会让你验证邮件地址。（弹窗）</p>
-<img src="/2025/01/13/VPN/4.png" class="" title="弹窗">
-<p>网站会向邮箱发一个邮件，里面有两个链接，第一个是官网（外国），第二个是镜像网站（国内），打开第二个链接。<br>在这个网页登录（如果你换了设备，比如用电脑注册，但用手机看邮件）或者等待，就会看到绿色对勾提示你验证完毕。<br>点击左上角服务，然后点订购新服务，进入如下界面。根据自身需求选择月或者年。注意设备数量限制，如果是团队要看清楚再订购。</p>
-<img src="/2025/01/13/VPN/5.png" class="" title="订购页面">
-<p>选择后进入付款页面。</p>
-<img src="/2025/01/13/VPN/6.png" class="" title="付款页面">
-<p>点击继续。</p>
-<img src="/2025/01/13/VPN/7.png" class="" title="付款继续">
-<p>记得填入<em><strong>JMS9272283</strong></em>，可以得到优惠！然后点击收款处。确认信息后选择支付宝（alipay），扫码付款。</p>
-<h1 id="建议大家选择1年的套餐，优惠更划算，也不用经常续费，老牌的厂商，可以比较放心"><a href="#建议大家选择1年的套餐，优惠更划算，也不用经常续费，老牌的厂商，可以比较放心" class="headerlink" title="建议大家选择1年的套餐，优惠更划算，也不用经常续费，老牌的厂商，可以比较放心"></a><strong>建议大家选择1年的套餐，优惠更划算，也不用经常续费，老牌的厂商，可以比较放心</strong></h1><h1 id="使用"><a href="#使用" class="headerlink" title="使用"></a>使用</h1><p>我已经购买过了，为了截图有注册了一个账号，接下来我换成之前的账号带大家看接下来的步骤。</p>
-<img src="/2025/01/13/VPN/8.png" class="" title="购买后">
-<p>点击服务、我的服务。此时会有一个可用服务。</p>
-<img src="/2025/01/13/VPN/9.png" class="" title="我的服务页面">
-<p>点开它。在这个页面你可以升级套餐、退款等。</p>
-<img src="/2025/01/13/VPN/10.png" class="" title="服务页面">
-<p>然后先放下这个网站，来安装应用。<br>Windows电脑：<a target="_blank" rel="noopener" href="https://justmysocks3.net/members/dist/v2rayn-core-5.18.zip">v2ray</a><br>Mac电脑：<a target="_blank" rel="noopener" href="https://justmysocks3.net/members/dist/V2RayX.app.zip">v2ray</a><del>梅开二度</del><br>IOS手机：<a target="_blank" rel="noopener" href="https://apps.apple.com/us/app/potatso-lite/id1239860606">potasto</a><br>Android手机&#x2F;华为：<a target="_blank" rel="noopener" href="https://app.koofr.net/content/links/f77d7938-0642-48b2-a0c8-114224bfde86/files/get/v2rayNG%E5%AE%89%E5%8D%93%E5%8F%8A%E5%8D%8E%E4%B8%BA%E6%89%8B%E6%9C%BA%E4%B8%93%E7%94%A8%EF%BC%88%E8%A7%A3%E5%8E%8B%E5%90%8E%E5%AE%89%E8%A3%85%E5%88%B0%E6%89%8B%E6%9C%BA%EF%BC%8C%E6%8E%A8%E8%8D%90%E4%BD%BF%E7%94%A8%EF%BC%8C%E5%8A%9F%E8%83%BD%E5%BC%BA%E5%A4%A7%EF%BC%89.zip?path=/v2rayNG%E5%AE%89%E5%8D%93%E5%8F%8A%E5%8D%8E%E4%B8%BA%E6%89%8B%E6%9C%BA%E4%B8%93%E7%94%A8%EF%BC%88%E8%A7%A3%E5%8E%8B%E5%90%8E%E5%AE%89%E8%A3%85%E5%88%B0%E6%89%8B%E6%9C%BA%EF%BC%8C%E6%8E%A8%E8%8D%90%E4%BD%BF%E7%94%A8%EF%BC%8C%E5%8A%9F%E8%83%BD%E5%BC%BA%E5%A4%A7%EF%BC%89.zip">v2ray</a><del>没有打广子，只是这个好用</del> </p>
-<h2 id="Windows"><a href="#Windows" class="headerlink" title="Windows"></a>Windows</h2><p>打开<strong>v2rayN.exe</strong>（一个字都不要差），然后在系统右下角缩小应用中找到它。（红色的V）</p>
-<img src="/2025/01/13/VPN/11.png" class="" title="v2rayN">
-<p>这时回到网站，点击第4个DNS links+QR。</p>
-<img src="/2025/01/13/VPN/13.png" class="" title="DNS">
-<p>你可以通过扫描二维码、复制链接添加服务器。（右键缩小的软件）</p>
-<img src="/2025/01/13/VPN/12.png" class="" title="添加服务器">
-<p>这里将系统代理改为自动。路由改为绕过大陆，这样就不用手动配置代理，并且在访问国内网站时也不会浪费流量（一个月有流量限制，但一般500G够用）。<br>但如果你要把它当加速器用或者软件并没有得到加速时就切换成全局，例如我玩花园战争2时就会用这个。<br>之后每次打开v2rayn的时候，就会自动连接VPN啦。</p>
-<h1 id="Mac、IOS、Android"><a href="#Mac、IOS、Android" class="headerlink" title="Mac、IOS、Android"></a>Mac、IOS、Android</h1><p>因为本人没有此类设备或者懒得弄（IOS），所以暂时没有。可以在<a target="_blank" rel="noopener" href="https://waimao.pro/pack/">https://waimao.pro/pack/</a>里找。</p>
-<h1 id="撒花！"><a href="#撒花！" class="headerlink" title="撒花！"></a>撒花！</h1>
-      
-    </div>
-    <footer class="article-footer">
-      <a data-url="http://example.com/2025/01/13/VPN/" data-id="cm5w8rsce00011cw47258a44h" data-title="VPN" class="article-share-link"><span class="fa fa-share">Share</span></a>
-      
-      
-      
-    </footer>
-  </div>
   
 </article>
-
-
-
-  
 
 
 </section>
