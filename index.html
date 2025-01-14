@@ -100,29 +100,67 @@
 </ul>
 <p>打开后，同意协议。</p>
 <img src="/2025/01/14/vscode-c-%E7%8E%AF%E5%A2%83%E9%85%8D%E7%BD%AE-msvc-mingw/2.png" class="" title="安装">
-<p>点击下一步，建议都勾选。（后面几个涉及到环境变量、右键菜单快捷打开、与打开cpp文件有关）<img src="https://i-blog.csdnimg.cn/direct/d1eac5602a364600b070722c8b7e4c73.png" alt="请添加图片描述"><br>安装即可。<br><img src="https://i-blog.csdnimg.cn/direct/4d63af1ce64941738c332bd919cf8f71.png" alt="请添加图片描述"><br>安装之后打开vscode，（我这里安装了汉化和很多插件，所以左侧栏和语言不一样，正常首次安装应该是英文）应该如下图所示。<img src="https://i-blog.csdnimg.cn/direct/7b484211faa14746b3e19acd1010c0ed.png" alt="请添加图片描述"></p>
-<h2 id="1-2汉化及插件下载"><a href="#1-2汉化及插件下载" class="headerlink" title="1.2汉化及插件下载"></a>1.2汉化及插件下载</h2><p>点击上面图片左侧栏从上往下数第五个图标，打开拓展页面（你之后会经常用上它，因为vscode本来就是靠插件获取功能的）。<br><img src="https://i-blog.csdnimg.cn/direct/a1ccc74b93bf48cf95c399e6e71bef0e.png" alt="请添加图片描述"><br>在搜索框里输入Chinese，点击第一个，然后点击install安装。然后点击弹出来的消息按钮（如果你不是第一次安装，且之前开过消息免打扰，就看不到，要在消息页面查看）。<br><img src="https://i-blog.csdnimg.cn/direct/ea50eec98a964ccab481d5a26afb4a09.png" alt="请添加图片描述"></p>
-<p><img src="https://i-blog.csdnimg.cn/direct/fa882f5063794ba6b3d30146f2d7144b.png" alt="请添加图片描述"><br>重启后，你的汉化就完成啦！<br>记得如法炮制，安装c++拓展！（Microsoft出品的那几个带对勾的）<img src="https://i-blog.csdnimg.cn/direct/57cfffd63e4e4f20ad522cd209cf8723.png" alt="请添加图片描述"></p>
+<p>点击下一步，建议都勾选。（后面几个涉及到环境变量、右键菜单快捷打开、与打开cpp文件有关）<img src="/2025/01/14/vscode-c-%E7%8E%AF%E5%A2%83%E9%85%8D%E7%BD%AE-msvc-mingw/3.png" class="" title="安装"><br>安装即可。</p>
+<img src="/2025/01/14/vscode-c-%E7%8E%AF%E5%A2%83%E9%85%8D%E7%BD%AE-msvc-mingw/4.png" class="" title="安装">
+<p>安装之后打开vscode，（我这里安装了汉化和很多插件，所以左侧栏和语言不一样，正常首次安装应该是英文）应该如下图所示。</p>
+<img src="/2025/01/14/vscode-c-%E7%8E%AF%E5%A2%83%E9%85%8D%E7%BD%AE-msvc-mingw/5.png" class="" title="页面">
+<h2 id="1-2汉化及插件下载"><a href="#1-2汉化及插件下载" class="headerlink" title="1.2汉化及插件下载"></a>1.2汉化及插件下载</h2><p>点击上面图片左侧栏从上往下数第五个图标，打开拓展页面（你之后会经常用上它，因为vscode本来就是靠插件获取功能的）。</p>
+<img src="/2025/01/14/vscode-c-%E7%8E%AF%E5%A2%83%E9%85%8D%E7%BD%AE-msvc-mingw/6.png" class="" title="插件位置">
+<p>在搜索框里输入Chinese，点击第一个，然后点击install安装。然后点击弹出来的消息按钮（如果你不是第一次安装，且之前开过消息免打扰，就看不到，要在消息页面查看）。</p>
+<img src="/2025/01/14/vscode-c-%E7%8E%AF%E5%A2%83%E9%85%8D%E7%BD%AE-msvc-mingw/7.png" class="" title="chinese">
+
+<img src="/2025/01/14/vscode-c-%E7%8E%AF%E5%A2%83%E9%85%8D%E7%BD%AE-msvc-mingw/8.png" class="" title="弹窗">
+<p>重启后，你的汉化就完成啦！<br>记得如法炮制，安装c++拓展！（Microsoft出品的那几个带对勾的）</p>
+<img src="/2025/01/14/vscode-c-%E7%8E%AF%E5%A2%83%E9%85%8D%E7%BD%AE-msvc-mingw/9.png" class="" title="c&#x2F;c++插件">
+
 <h1 id="2、环境配置（msvc）"><a href="#2、环境配置（msvc）" class="headerlink" title="2、环境配置（msvc）"></a>2、环境配置（msvc）</h1><h2 id="2-1-vs安装"><a href="#2-1-vs安装" class="headerlink" title="2.1 vs安装"></a>2.1 vs安装</h2><p><a target="_blank" rel="noopener" href="https://visualstudio.microsoft.com/zh-hans/thank-you-downloading-visual-studio/?sku=Community&channel=Release&version=VS2022&source=VSLandingPage&cid=2030&passive=false">vs官网</a></p>
-<p>msvc必须先安装vs或单独下载工具，而且占用空间很大，如果电脑硬盘不够大，建议折腾折腾用mingw（<del>其实用vscode怎么样都很折腾</del> ）<br><img src="https://i-blog.csdnimg.cn/direct/152a0fdcf294456883ce2734a1fc7953.png" alt="请添加图片描述"><br>个人建议勾选如下选项，但硬盘需求较大，其实理论来说只需要第一个，但我就会报错，可以试试勾选荧光笔部分。但我不是大师，可能会有很多不必要的项，请谅解！红色的SDK可以先不安装，如果报错（例如头文件路径之类的东西），可以安装试试。有几个不大但有自动补全之类功能的也勾选了。<br><img src="https://i-blog.csdnimg.cn/direct/095e74e97652488c9e983cee7041d7f7.png" alt="请添加图片描述"><br>然后等待······<del>（死人vs的下载速度）</del></p>
-<h2 id="2-2打开vscode"><a href="#2-2打开vscode" class="headerlink" title="2.2打开vscode"></a>2.2打开vscode</h2><p>win+s键搜索<code>Developer</code>，点击cmd或powershell。（最好用管理员，否则可能报错，也可以设置此应用默认以管理员打开）<img src="https://i-blog.csdnimg.cn/direct/4865ff27108b41ba844de536241a8e81.png" alt="请添加图片描述"><br><img src="https://i-blog.csdnimg.cn/direct/9259ce2c04ca40219ce18d2075cfe8aa.png" alt="请添加图片描述"><br>在这个界面，输入cd &#x2F;d 你想用的盘符:（例如cd &#x2F;d D:)<br>但有个很出生的东西就是，cmd要加&#x2F;d，powershell不需要，否则要么没用，要么报错<br>使用cd命令打开你要的文件夹（接下来cmd和pwshell就都不要&#x2F;d），例如cd Lxsh1203（文件夹名称）<br>或者用mkdir Lxsh1203创建一个文件夹（只需要创建一次，之后就省略这一步），之后再用cd打开<br>然后输入 code 并回车。<img src="https://i-blog.csdnimg.cn/direct/699e90896b864ebc91862573c8554721.png" alt="请添加图片描述"><br>这是vscode就被打开啦！（要用msvc就必须这样打开，但请定期普通打开，因为管理员打开无法更新vscode）</p>
-<h2 id="2-3愉快编程"><a href="#2-3愉快编程" class="headerlink" title="2.3愉快编程"></a>2.3愉快编程</h2><p>创建cpp文件（c也可以，但本人不会c&#x2F;c#语言）。<img src="https://i-blog.csdnimg.cn/direct/28eb8861eb84465697b168ecb95bd845.png" alt="请添加图片描述"><br>键入以下代码（其他代码也行）。</p>
+<p>msvc必须先安装vs或单独下载工具，而且占用空间很大，如果电脑硬盘不够大，建议折腾折腾用mingw（<del>其实用vscode怎么样都很折腾</del> ）</p>
+<img src="/2025/01/14/vscode-c-%E7%8E%AF%E5%A2%83%E9%85%8D%E7%BD%AE-msvc-mingw/10.png" class="" title="c++负载">
+<p>个人建议勾选如下选项，但硬盘需求较大，其实理论来说只需要第一个，但我就会报错，可以试试勾选荧光笔部分。但我不是大师，可能会有很多不必要的项，请谅解！红色的SDK可以先不安装，如果报错（例如头文件路径之类的东西），可以安装试试。有几个不大但有自动补全之类功能的也勾选了。</p>
+<img src="/2025/01/14/vscode-c-%E7%8E%AF%E5%A2%83%E9%85%8D%E7%BD%AE-msvc-mingw/11.png" class="" title="建议勾选">
+<p>然后等待······<del>（死人vs的下载速度）</del></p>
+<h2 id="2-2打开vscode"><a href="#2-2打开vscode" class="headerlink" title="2.2打开vscode"></a>2.2打开vscode</h2><p>win+s键搜索<code>Developer</code>，点击cmd或powershell。（最好用管理员，否则可能报错，也可以设置此应用默认以管理员打开）</p>
+<img src="/2025/01/14/vscode-c-%E7%8E%AF%E5%A2%83%E9%85%8D%E7%BD%AE-msvc-mingw/12.png" class="" title="developer">
+<img src="/2025/01/14/vscode-c-%E7%8E%AF%E5%A2%83%E9%85%8D%E7%BD%AE-msvc-mingw/13.png" class="" title="打开后的界面">
+<p>在这个界面，输入cd &#x2F;d 你想用的盘符:(例如cd &#x2F;d D:)<br>但有个很出生的东西就是，cmd要加&#x2F;d，powershell不需要，否则要么没用，要么报错<br>使用cd命令打开你要的文件夹（接下来cmd和pwshell就都不要&#x2F;d），例如cd Lxsh1203（文件夹名称）<br>或者用mkdir Lxsh1203创建一个文件夹（只需要创建一次，之后就省略这一步），之后再用cd打开<br>然后输入 code 并回车。</p>
+<img src="/2025/01/14/vscode-c-%E7%8E%AF%E5%A2%83%E9%85%8D%E7%BD%AE-msvc-mingw/14.png" class="" title="code">
+<p>这是vscode就被打开啦！（要用msvc就必须这样打开，但请定期普通打开，因为管理员打开无法更新vscode）</p>
+<h2 id="2-3愉快编程"><a href="#2-3愉快编程" class="headerlink" title="2.3愉快编程"></a>2.3愉快编程</h2><p>创建cpp文件（c也可以，但本人不会c&#x2F;c#语言）。</p>
+<img src="/2025/01/14/vscode-c-%E7%8E%AF%E5%A2%83%E9%85%8D%E7%BD%AE-msvc-mingw/15.png" class="" title="创建文件">
+<p>键入以下代码（其他代码也行）。</p>
 <figure class="highlight cpp"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><code class="hljs cpp"><span class="hljs-meta">#<span class="hljs-keyword">include</span><span class="hljs-string">&lt;iostream&gt;</span></span><br><span class="hljs-keyword">using</span> <span class="hljs-keyword">namespace</span> std;<br><span class="hljs-function"><span class="hljs-type">int</span> <span class="hljs-title">main</span><span class="hljs-params">()</span></span>&#123;<br>	cout &lt;&lt; <span class="hljs-string">&quot;hello world!&quot;</span>;<br>	<span class="hljs-keyword">return</span> <span class="hljs-number">0</span>;<br>&#125;<br></code></pre></td></tr></table></figure>
-<p><img src="https://i-blog.csdnimg.cn/direct/3c9e5ed262af4cbea445d8a9396b4197.png" alt="请添加图片描述"><br>按下快捷键ctrl shift p，呼出菜单输入c&#x2F;c++ UI，并点击进入以下画面。<img src="https://i-blog.csdnimg.cn/direct/79530fe1aad0483491df7997cb470e72.png" alt="请添加图片描述"><br>在编译器路径点击右侧的小三角，选择带cl.exe的一项（一般是第一项），但有时会是x86，也就是32位系统，记得改成x64（有两处都要改）。<img src="https://i-blog.csdnimg.cn/direct/2d971a19e4e7486ea4d0eb4271e4e9ab.png" alt="请添加图片描述"><br>然后就会多一个.vscode的文件夹，它就是配置文件夹，不要删掉！<img src="https://i-blog.csdnimg.cn/direct/8428e144633b41ee80ac43d611b04807.png" alt="请添加图片描述"><br>接下来回到cpp文件，再次ctrl shift p键入task，选择配置默认生成任务，等待一会弹出窗口，然后点击cl.exe生成。便会出现tasks.json。<img src="https://i-blog.csdnimg.cn/direct/93cc2f489d4744f186525d31150077e6.png" alt="请添加图片描述"><br>接下来回到cpp，按下f5运行，选择windows启动。有时候会跳转，回到终端就可以查看程序结果了！<img src="https://i-blog.csdnimg.cn/direct/89dfd7ec83234e80b7fe1be2d1dbcd4f.png" alt="请添加图片描述"></p>
+<img src="/2025/01/14/vscode-c-%E7%8E%AF%E5%A2%83%E9%85%8D%E7%BD%AE-msvc-mingw/16.png" class="" title="代码">
+<p>按下快捷键ctrl shift p，呼出菜单输入c&#x2F;c++ UI，并点击进入以下画面。</p>
+<img src="/2025/01/14/vscode-c-%E7%8E%AF%E5%A2%83%E9%85%8D%E7%BD%AE-msvc-mingw/17.png" class="" title="ctrl shift p">
+<p>在编译器路径点击右侧的小三角，选择带cl.exe的一项（一般是第一项），但有时会是x86，也就是32位系统，记得改成x64（有两处都要改）。</p>
+<img src="/2025/01/14/vscode-c-%E7%8E%AF%E5%A2%83%E9%85%8D%E7%BD%AE-msvc-mingw/18.png" class="" title="编译器路径">
+<p>然后就会多一个.vscode的文件夹，它就是配置文件夹，不要删掉！</p>
+<img src="/2025/01/14/vscode-c-%E7%8E%AF%E5%A2%83%E9%85%8D%E7%BD%AE-msvc-mingw/19.png" class="" title=".vscode">
+<p>接下来回到cpp文件，再次ctrl shift p键入task，选择配置默认生成任务，等待一会弹出窗口，然后点击cl.exe生成。便会出现tasks.json。</p>
+<img src="/2025/01/14/vscode-c-%E7%8E%AF%E5%A2%83%E9%85%8D%E7%BD%AE-msvc-mingw/20.png" class="" title="生成tasks">
+<p>接下来回到cpp，按下f5运行，选择windows启动。有时候会跳转，回到终端就可以查看程序结果了！</p>
+<img src="/2025/01/14/vscode-c-%E7%8E%AF%E5%A2%83%E9%85%8D%E7%BD%AE-msvc-mingw/21.png" class="" title="运行">
 <h2 id="2-4-launch-json调试配置"><a href="#2-4-launch-json调试配置" class="headerlink" title="2.4  launch.json调试配置"></a>2.4  launch.json调试配置</h2><p>都看到这一步了，可以休息一下了。如果你不需要调试、监测变量，那就不用配置接下来的东西了，但调试很好用，建议配置（也不难）。</p>
-<p>回到cpp，点击右上角的齿轮。<img src="https://i-blog.csdnimg.cn/direct/8f5203a70c9b4732a437d86e826f51b4.png" alt="请添加图片描述"><br>然后选择cl.exe。完成！launch.json出现，这时点击左侧有个虫子的图标就可以调试了！<br><strong>你一定很有成就感吧！快写几道洛谷题庆祝一下！</strong>（DOGE）<br><del>不！</del></p>
+<p>回到cpp，点击右上角的齿轮。</p>
+<img src="/2025/01/14/vscode-c-%E7%8E%AF%E5%A2%83%E9%85%8D%E7%BD%AE-msvc-mingw/22.png" class="" title="齿轮">
+<p>然后选择cl.exe。完成！launch.json出现，这时点击左侧有个虫子的图标就可以调试了！<br><strong>你一定很有成就感吧！快写几道洛谷题庆祝一下！</strong>（DOGE）<br><del>不！</del></p>
 <h1 id="3、mingw配置"><a href="#3、mingw配置" class="headerlink" title="3、mingw配置"></a>3、mingw配置</h1><p><a target="_blank" rel="noopener" href="https://blog.csdn.net/qq_42709977/article/details/118835411">大佬作品</a>      看看Wittyco大佬的作品吧！<del>累死我了！不写了！</del><br>mingw环境配置不想写了，看看上面这篇帖子吧。<br>launch.json大佬好像没有提到，方法同msvc。<br>mingw打开方式就很简单，就是直接打开vscode。</p>
-<h2 id="3-1-编译器路径"><a href="#3-1-编译器路径" class="headerlink" title="3.1 编译器路径"></a>3.1 编译器路径</h2><p>同msvc，但选择gcc或g++。<br>在cpp文件页面ctrl shift p，输入c&#x2F;c++ UI<br>编译器路径选择g++&#x2F;gcc。<br><img src="https://i-blog.csdnimg.cn/direct/0760f58dd9614c3aa37ee3b541e29796.png#pic_center" alt="在这里插入图片描述"></p>
-<h2 id="3-2-tasks-json"><a href="#3-2-tasks-json" class="headerlink" title="3.2 tasks.json"></a>3.2 tasks.json</h2><p>同msvc。<br>ctrl shift p 输入tasks，选择默认生成任务，选择g++&#x2F;gcc。<br><img src="https://i-blog.csdnimg.cn/direct/fa18b9fcac6e46638ac0aa970fd06c78.png#pic_center" alt="在这里插入图片描述"></p>
+<h2 id="3-1-编译器路径"><a href="#3-1-编译器路径" class="headerlink" title="3.1 编译器路径"></a>3.1 编译器路径</h2><p>同msvc，但选择gcc或g++。<br>在cpp文件页面ctrl shift p，输入c&#x2F;c++ UI<br>编译器路径选择g++&#x2F;gcc。</p>
+<img src="/2025/01/14/vscode-c-%E7%8E%AF%E5%A2%83%E9%85%8D%E7%BD%AE-msvc-mingw/23.png" class="" title="编译器路径">
+
+<h2 id="3-2-tasks-json"><a href="#3-2-tasks-json" class="headerlink" title="3.2 tasks.json"></a>3.2 tasks.json</h2><p>同msvc。<br>ctrl shift p 输入tasks，选择默认生成任务，选择g++&#x2F;gcc。</p>
+<img src="/2025/01/14/vscode-c-%E7%8E%AF%E5%A2%83%E9%85%8D%E7%BD%AE-msvc-mingw/24.png" class="" title="tasks">
+
 <h2 id="3-3-launch-json"><a href="#3-3-launch-json" class="headerlink" title="3.3 launch.json"></a>3.3 launch.json</h2><p>同上。<br>不要骂我，我是懒蛋~~拜拜！（保证有空补上！）</p>
 <h1 id="4、插件推荐"><a href="#4、插件推荐" class="headerlink" title="4、插件推荐"></a>4、插件推荐</h1><p>摸鱼 <a target="_blank" rel="noopener" href="https://blog.csdn.net/codingpy/article/details/118097795">谢谢你codingpy</a><br>AI <a target="_blank" rel="noopener" href="https://blog.csdn.net/fengshi_fengshi/article/details/142930564">谢谢你coder_风逝</a><br>杂项总结 <a target="_blank" rel="noopener" href="https://cloud.tencent.com/developer/article/2190063">谢谢你一尾流莺</a></p>
-<p><img src="https://i-blog.csdnimg.cn/direct/0411a04f4e7241688ca8fc5569c7e748.png#pic_center" alt="在这里插入图片描述"></p>
+<img src="/2025/01/14/vscode-c-%E7%8E%AF%E5%A2%83%E9%85%8D%E7%BD%AE-msvc-mingw/25.png" class="" title="防伪标">
+
 <p>真的完结啦！撒花！记得关注(*´∀&#96;)~♥</p>
 
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://example.com/2025/01/14/vscode-c-%E7%8E%AF%E5%A2%83%E9%85%8D%E7%BD%AE-msvc-mingw/" data-id="cm5w8yysm0002esw4dtu1hkuc" data-title="vscode c++环境配置(msvc+mingw)" class="article-share-link"><span class="fa fa-share">Share</span></a>
+      <a data-url="http://example.com/2025/01/14/vscode-c-%E7%8E%AF%E5%A2%83%E9%85%8D%E7%BD%AE-msvc-mingw/" data-id="cm5w9w3yr00009ww46r9b64b1" data-title="vscode c++环境配置(msvc+mingw)" class="article-share-link"><span class="fa fa-share">Share</span></a>
       
       
       
@@ -191,7 +229,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://example.com/2025/01/13/VPN/" data-id="cm5w8yysl0001esw4e2a1cg1n" data-title="VPN" class="article-share-link"><span class="fa fa-share">Share</span></a>
+      <a data-url="http://example.com/2025/01/13/VPN/" data-id="cm5w9w3yt00019ww45yw5dnp8" data-title="VPN" class="article-share-link"><span class="fa fa-share">Share</span></a>
       
       
       
